@@ -406,7 +406,7 @@ const Apollo = {
                 title: pdfh(item, "img&&alt"),
                 url: url + $('').lazyRule(() => {
                     var html = fetch(input)
-                    var id = pdfh(html, "#video-player-placeholder&&data-vid");
+                    var id = pdfh(html, "#video-player-comtainer&&video&&data-vid");
                     var ajax = "https://www.tnaflix.com/ajax/video-player/" + id;
                     var data = JSON.parse(fetch(ajax)).html
                     var list = pdfa(data, "body&&source")
